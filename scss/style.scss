@@ -549,6 +549,7 @@ span.key {
             left: 50%;
             transform: translateX(-50%) translateY(50%);
             z-index: 999;
+            border-radius: 9999px;
             svg {
                 transition: inherit;
                 circle,
