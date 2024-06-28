@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYTEAM - about</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#main" class="headeR__logo link">
+                <img src="./assets/icons/logo.svg" alt="Logotype">
+            </a>
+            <navbar class="header__navbar" id="navbar">
+                <ul class="header__navbar__list">
+                    <li class="header__navbar__item">
+                        <a href="/" class="header__navbar__link link">home</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="#main" class="header__navbar__link link">about</a>
+                    </li>
+                </ul>
+                <a class="btn btn-primary" href="contact.html">contact us</a>
+            </navbar>
+
+            <!-- mobile menu -->
+            <div class="mobile-menu" id="mobile-menu">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="/" class="mobile-menu__link link">home</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#main" class="mobile-menu__link link">about</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="btn btn-primary" href="contact.html">contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- mobile menu end -->
+            <div class="mobile-menu__background"></div>
+            <button class="btn menu-btn" title="menu">
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main id="main" class="main">
+        <!-- hero -->
+        <section class="hero about-hero" id="hero">
+            <div class="container">
+                <h1 class="hero__title">About</h1>
+                <p class="hero__desc">We help companies build dynamic teams made up of top global talent. Using our
+                    network of passionate professionals we
+                    drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products
+                    and experiences. We’ll
+                    bring those teams to you.</p>
+            </div>
+        </section>
+        <!-- hero end -->
+
+        <!-- directors -->
+        <section class="directors" id="directors">
+            <div class="container">
+                <h1 class="section-title">Meet the directors</h1>
+
+                <div class="directors__wrapper">
+                    <div class="directors__cards">
+                        <div class="director-card">
+                            <div class="director-card__title">
+                                <img src="./assets/images/director-1.png" alt="director-1" class="director-card__img">
+                                <h3 class="director-card__name">Nikita Marks</h3>
+                                <p class="director-card__position">Founder & CEO</p>
+                            </div>
+                            <div class="director-card__details">
+                                <h2 class="title">Nikita Marks</h2>
+                                <p class="desc">“Unique perspectives shape unique products, which is what you need to
+                                    survive these days.”</p>
+                                <img src="./assets/icons/soicals-two.svg" alt="Socials" usemap="#socials2">
+                                <map name="socials2">
+                                    <area shape="rect" coords="0,0,20,20" href="https://www.twitter.com/" alt="Twitter">
+                                    <area shape="rect" coords="40,0,60,20" href="https://www.linkedin.com/"
+                                        alt="LinkedIn">
+                                </map>
+                            </div>
+                        </div>
+                        <button class="btn" title="more">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56"
+                                fill="none">
+                                <circle cx="28" cy="28" r="28" fill="#F67E7E" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M30 20H26V26H20V30H26V36H30V30H36V26H30V20Z" fill="#012F34" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+        </section>
+        <!-- directors end -->
+    </main>
+    <!-- main end -->
+
+    <!-- footer-banner -->
+    <section class="footer-banner">
+        <div class="container">
+            <h1 class="section-title">Ready to get started?</h1>
+            <a href="#" class="btn btn-primary btn-dark">contact us</a>
+        </div>
+    </section>
+    <!-- footer-banner end -->
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__left">
+                <div class="footer__logo-and-links">
+                    <a href="#" class="logo">
+                        <img src="./assets/icons/logo.svg" alt="logo">
+                    </a>
+                    <ul class="footer__links">
+                        <li class="footer__links__item">
+                            <a href="/" class="footer__link link">Home</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#" class="footer__link link">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer__address">987 Hillcrest Lane<br>Irvine, CA<br>California 92714<br>Call Us :
+                    <a href="tel:949-833-7432" class="link">949-833-7432</a>
+                </p>
+            </div>
+            <div class="footer__right">
+                <img src="./assets/icons/soicals.png" alt="Socials" usemap="#socials">
+                <map name="socials">
+                    <area shape="rect" coords="0,0,24,24" href="https://facebook.com" alt="Facebook" target="_blank"
+                        rel="noopener">
+                    <area shape="circle" coords="40,24,24" href="https://pinterest.com" alt="Pinterest" target="_blank"
+                        rel="noopener">
+                    <area shape="rect" coords="80,0,104,24" href="https://x.com" alt="Facebook" target="_blank"
+                        rel="noopener">
+                </map>
+                <p class="copyright">Copyright <span id="date"></span>. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
