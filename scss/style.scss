@@ -31,7 +31,8 @@ html {
 
 // link and btns
 .link,
-.btn {
+.btn,
+area {
     text-decoration: none;
     color: inherit;
     background: transparent;
@@ -469,69 +470,79 @@ span.key {
     padding-top: 88px;
     padding-bottom: 128px;
     background: #004047;
-    .director-card {
-        width: 327px;
-        height: 253px;
-        background: $secondary-bg-color;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-        overflow: hidden;
-        &__title {
-            transition: all 0.3s ease;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 32px;
-            padding-bottom: 56px;
-            background-color: $primary-bg-color;
-            transform: translateY(-100%);
-            img {
-                width: 96px;
-                margin-bottom: 16px;
-            }
-        }
-        &__name,
-        .title {
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 28px;
-            color: $secondary-color;
-        }
-        &__position,
-        .desc {
-            font-size: 15px;
-            font-weight: 500;
-            line-height: 25px;
-        }
-        &__details {
-            padding-top: 35px;
-            padding-bottom: 63px;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            img {
-                width: 60px;
-                height: 20px;
-            }
-            .title {
-                margin-bottom: 8px;
-            }
-            .desc {
-                width: 233px;
-                padding-bottom: 24px;
-            }
-        }
+    .section-title {
+        margin-bottom: 48px;
+        text-align: center;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 52px;
     }
     &__wrapper {
         position: relative;
+        width: 100%;
+        background: $secondary-bg-color;
+        height: 253px;
+        .director-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            overflow: hidden;
+            &__title {
+                transition: all 0.3s ease;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 32px;
+                padding-bottom: 56px;
+                background-color: $secondary-bg-color;
+                img {
+                    width: 96px;
+                    margin-bottom: 16px;
+                }
+            }
+            &__name,
+            .title {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 28px;
+                color: $secondary-color;
+            }
+            &__position,
+            .desc {
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 25px;
+            }
+            &__details {
+                padding-top: 35px;
+                padding-bottom: 63px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: all 0.3s ease;
+                transform: translateY(100%);
+                img {
+                    width: 60px;
+                    height: 20px;
+                }
+                .title {
+                    margin-bottom: 8px;
+                }
+                .desc {
+                    width: 233px;
+                    padding-bottom: 24px;
+                }
+            }
+        }
         .btn {
             position: absolute;
             bottom: 0;
@@ -558,6 +569,14 @@ span.key {
             }
         }
         &.active {
+            .director-card {
+                &__title {
+                    transform: translateY(-100%);
+                }
+                &__details {
+                    transform: translateY(0);
+                }
+            }
             .btn {
                 svg {
                     transform: rotate(135deg);
@@ -701,6 +720,30 @@ span.key {
         }
     }
     // footer end
+
+    /*
+     * about
+     */
+    .directors {
+        padding-top: 100px;
+        padding-bottom: 128px;
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 11px;
+        }
+        &__wrapper {
+            margin-bottom: 65px;
+            height: 270px;
+            padding-top: 10px;
+            &:nth-child(5),
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    /*
+    * about end
+    */
 }
 // media screen and min-width: 768px end
 
@@ -833,6 +876,31 @@ span.key {
         }
     }
     // footer end
+
+    /*
+     * about
+     */
+    .directors {
+        padding-top: 140px;
+        padding-bottom: 168px;
+        .section-title {
+            margin-bottom: 64px;
+        }
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        &__wrapper {
+            margin-bottom: 76px;
+            height: 280px;
+            &:nth-child(4) {
+                margin-bottom: 0;
+            }
+        }
+    }
+    /*
+    * about end
+    */
 }
 // media screen and min-width: 1100px end
 
