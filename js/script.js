@@ -7,6 +7,11 @@ const dateEl = document.querySelector("#date");
 menuBtn.addEventListener("click", () => {
     menuBtn.classList.toggle("active");
     mobileMenu.classList.toggle("active");
+    if (mobileMenu.classList.contains("active")) {
+        document.body.style.overflow = "hidden";
+    } else {
+        document.body.style.overflow = "auto";
+    }
 });
 
 directors.forEach((director) => {
