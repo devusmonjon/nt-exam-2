@@ -9,8 +9,10 @@ menuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("active");
     if (mobileMenu.classList.contains("active")) {
         document.body.style.overflow = "hidden";
+        document.body.style.marginRight = "20px";
     } else {
         document.body.style.overflow = "auto";
+        document.body.style.marginRight = 0;
     }
 });
 
